@@ -1,0 +1,56 @@
+.px-oembed {
+  clear: both;
+  margin-bottom: 1.47em; }
+  .px-oembed .px-oembed-wrapper {
+    position: relative;
+    display: block;
+    height: 0;
+    padding: 0;
+    padding-bottom: 56.25%; }
+    .px-oembed .px-oembed-wrapper.open > .top {
+      z-index: 1; }
+    .px-oembed .px-oembed-wrapper.open > .bottom {
+      z-index: 3; }
+  .px-oembed .embed-responsive-16by9 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; }
+    .px-oembed .embed-responsive-16by9 > img, .px-oembed .embed-responsive-16by9 > iframe {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      margin-bottom: 0;
+      max-width: none; }
+  .px-oembed .top {
+    z-index: 2;
+    cursor: pointer; }
+    .px-oembed .top:after {
+      transition: -webkit-transform 0.15s ease-in-out, opacity 0.15s ease-in-out;
+      transition: transform 0.15s ease-in-out, opacity 0.15s ease-in-out;
+      -webkit-backface-visibility: hidden;
+              backface-visibility: hidden; }
+    .px-oembed .top:after {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: -30px;
+      margin-left: -30px;
+      content: '\00ad';
+      width: 60px;
+      height: 60px;
+      background: #fff url('../gfx/icon-play.svg') 50% 50% no-repeat;
+      z-index: 3;
+      opacity: 0.72;
+      border-radius: 50%;
+      box-shadow: 0 0 12px 2px rgba(255, 255, 255, 0.92); }
+    .px-oembed .top:hover:after {
+      -webkit-transform: scale(1.17);
+          -ms-transform: scale(1.17);
+              transform: scale(1.17);
+      opacity: 0.85; }
+  .px-oembed .bottom {
+    z-index: 1; }
