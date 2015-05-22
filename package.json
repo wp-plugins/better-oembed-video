@@ -1,0 +1,10 @@
+{
+    "name": "better-oembed-video",
+    "description": "",
+    "devDependencies": {
+        "grunt": "~0.4.5",
+        "grunt-sass": "~0.11.0",
+        "grunt-autoprefixer": "~1.0.1",
+        "grunt-contrib-watch": "~0.6.1"
+    }
+}
